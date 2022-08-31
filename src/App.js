@@ -8,8 +8,14 @@ function App() {
       {/*Navbar*/}
       {/*Destaque*/}
       {/*Em alta*/}
-      {categories.map(category => {
-        return <Row />;
+      {categories.map((category) => {
+        return (
+          <Row 
+            key={category.name} 
+            title={category.title}
+            path={category.path} 
+          />
+        );
       })}      
     </div>
   ); 
