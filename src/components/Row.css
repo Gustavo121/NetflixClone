@@ -15,8 +15,17 @@
 }
 
 .movie-card {
+    object-fit: contain;
     width: 100%;
     max-height: 100px;
+    margin-bottom: 10px;
+    transition: transform 450ms;
+}
+
+.movie-card-large {
+    object-fit: contain;
+    width: 100%;
+    max-height: 250px;
     margin-bottom: 10px;
     transition: transform 450ms;
 }
